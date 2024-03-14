@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Portifólio</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="src/css/styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" id="logo-link"><img id="logo" src="src/assets/logomarca.svg" alt="Logomarca" /></a>
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="pages/sobre.html">Sobre</a>
+                <a href="pages/tecnologias.html">Tecnologias</a>
+                <a href="https://github.com/raphael-hfs">GitHub</a>
+            </nav>
+            <img src="src/assets/burgermenu.svg" id="btn-burger-menu" alt="" />
+            <div class="burger-menu">
+                <a href="index.html">Início</a>
+                <a href="pages/sobre.html">Sobre</a>
+                <a href="pages/tecnologias.html">Tecnologias</a>
+                <a href="https://github.com/raphael-hfs">GitHub</a>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section class="welcome-title">
+                    <h1 id="hello">Seja bem-vindo!</h1>
+                </section>
+                <section class="welcome-content-row">
+                    <p>Seja bem-vindo ao meu portifólio! Aqui você verá como trabalho, minha experiência, linguagens de programação e frameworks que utilizo no trabalho.</p>
+                </section>
+                <section class="welcome-content-row">
+                    <p>Deseja conhecer o meu trabalho?</p>
+                    <section class="welcome-choice-section">
+                        <button type="button" class="btn" onclick="technologiesPageRedirect()">Tecnologias</button>
+                        <button type="button" class="btn" onclick="gitHubRedirect()">GitHub</button>
+                    </section>
+                </section>
+                <section class="welcome-content-row">
+                    <p>Deseja saber quem eu sou?</p>
+                    <button type="button" class="btn" onclick="aboutPageRedirect()">Sobre</button>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <p id="copyright">&copy;2024 &ndash; Raphael H. F. Silva</p>
+        </footer>
+        <script src="src/js/scripts.js"></script>
+    </body>
+</html>
