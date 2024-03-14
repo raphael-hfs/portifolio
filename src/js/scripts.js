@@ -18,12 +18,3 @@ function aboutPageRedirect() {
 function gitHubRedirect() {
     window.location.assign("https://github.com/raphael-hfs");
 }
-
-function youTubeRedirect() {
-    window.location.assign("https://www.youtube.com/channel/UC-loiBT5NG7bNdv8NgV1Kzw");
-}
-
-function linkedInRedirect() {
-    window.location.assign("https://www.linkedin.com/in/raphael-henrique-fran%C3%A7oso-silva-630827296/");
-}
-

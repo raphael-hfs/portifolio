@@ -49,6 +49,7 @@ a:hover { filter: drop-shadow(0 0 1rem var(--yellow)); }
 .btn:hover {
     color: #000;
     background-image: linear-gradient(135deg, var(--cyan), var(--blue));
+    cursor: pointer;
 }
 
 main {
