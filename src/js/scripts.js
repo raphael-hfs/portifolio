@@ -18,3 +18,7 @@ function aboutPageRedirect() {
 function gitHubRedirect() {
     window.location.assign("https://github.com/raphael-hfs");
 }
+
+function projectsPageRedirect() {
+    window.location.assign("pages/projetos.html");
+}
