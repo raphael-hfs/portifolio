@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DeveloperProfile from "../assets/developer_profile.jpg";
+---
+
+<Layout>
+    <div class="flex flex-wrap h-full justify-center space-x-6 md:items-center md:align-middle">
+        <div>
+            <img src={DeveloperProfile.src} alt="Developer Profile" class="rounded-4xl mx-auto h-90" />
+        </div>
+        <div>
+            <h1 class="text-4xl font-bold text-center text-primary mb-4">Welcome to my Portfolio!</h1>
+            <p>My name is Raphael and I am a Brazilian full stack developer.</p>
+            <section class="mt-2">
+                <p>Discover my skills: <a href="/skills" class="text-accent font-bold">View Skills</a></p>
+            </section>
+            <section class="mt-2">
+                <p>Learn more about me: <a href="/about" class="text-accent font-bold">View About</a></p>
+            </section>
+        </div>
+    </div>
+</Layout>

@@ -1,0 +1,42 @@
+---
+import Logo from "../assets/Logo.svg";
+import { Menu } from "@lucide/astro";
+---
+
+<header class="flex items-center w-screen h-20 justify-between bg-base-200 px-4 py-2">
+    <a href="/">
+        <img src={Logo.src} alt="Logo" class="size-16" />
+    </a>
+    <nav class="hidden text-lg md:flex space-x-4">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="https://github.com/raphael-hfs" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+    <button id="burger-menu-btn" class="block size-16 btn btn-ghost radio-xl md:hidden">
+        <Menu class="size-full" />
+    </button>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobile-navbar" class="absolute right-1 hidden">
+    <nav class="flex flex-col items-center space-y-4 w-40 bg-base-200 text-lg p-4">
+        <a href="/" class="block">Home</a>
+        <a href="/about" class="block">About</a>
+        <a href="/skills" class="block">Skills</a>
+        <a href="https://github.com/raphael-hfs" target="_blank" rel="noopener noreferrer" class="block">GitHub</a>
+    </nav>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const burgerMenuBtn = document.getElementById("burger-menu-btn");
+        const mobileNavbar = document.getElementById("mobile-navbar");
+
+        if (burgerMenuBtn && mobileNavbar) {
+            burgerMenuBtn.addEventListener("click", () => {
+                mobileNavbar.classList.toggle("hidden");
+            });
+        }
+    });
+</script>

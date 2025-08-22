@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DeveloperProfile from "../assets/developer_profile.jpg";
+---
+
+<Layout>
+    <h1 class="text-primary text-4xl font-bold text-center">About Me</h1>
+    <div class="mt-4">
+            <h2 class="text-2xl font-bold">Who I Am</h2>
+            <section class="mt-2">
+                <p>My name is Raphael, I am 21 years old and I am a full stack developer.</p>
+                <p>I am autistic, youtuber and blogger. I like to draw and play games in my free time.</p>
+            </section>
+            <h2 class="text-2xl font-bold mt-4">My experience</h2>
+            <section class="mt-2">
+                <p>When I was about 12 years old, I started to be interested in programming through game development and the first programming language I started to learn was Java, after, my interest expanded to web development where I started learning HTML, CSS and JavaScript. After this, I began to explore other languages like Python, Lua, C, C++ and C#.</p>
+                <p>Nowadays, I am graduated in System Analysis and Development.</p>
+            </section>
+            <section class="mt-4 flex flex-wrap">
+                <section class="mr-4">
+                    <img src={DeveloperProfile.src} alt="Developer Profile" class="rounded-2xl h-75" />
+                </section>
+                <section>
+                    <h2 class="text-2xl font-bold">My Social Links</h2>
+                    <ul class="list-disc list-inside mt-2">
+                        <li><a href="https://www.youtube.com/@bingojordan" class="text-accent">YouTube</a></li>
+                        <li><a href="https://www.linkedin.com/in/raphael-henrique-fran%C3%A7oso-silva-630827296/" class="text-accent">LinkedIn</a></li>
+                        <li><a href="https://x.com/FrancosoRaphael" class="text-accent">X</a></li>
+                        <li><a href="https://www.tumblr.com/blog/bingojordanofc" class="text-accent">Tumblr</a></li>
+                        <li><a href="https://www.instagram.com/raphael.bingojordan/" class="text-accent">Instagram</a></li>
+                        <li><a href="https://bingojordanblogofc.blogspot.com/" class="text-accent">Blog</a></li>
+                    </ul>
+                </section>
+            </section>
+    </div>
+</Layout>

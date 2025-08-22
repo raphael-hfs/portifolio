@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+import AppNavbar from "../components/AppNavbar.astro";
+import AppFooter from "../components/AppFooter.astro";
+import ContentContainer from "../components/ContentContainer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Raphael H. F. Silva's portfolio</title>
+	</head>
+	<body class="bg-gradient-to-br from-teal-900 to-violet-900">
+		<AppNavbar />
+		<ContentContainer>
+			<slot />
+		</ContentContainer>
+		<AppFooter />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>

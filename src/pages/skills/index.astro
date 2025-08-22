@@ -1,0 +1,42 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Card from "./_components/Card.astro";
+
+const Map = [
+    {
+        title: "Programming Languages",
+        description: "Languages I am familiar with and learning, some of them are TypeScript and C++",
+        link: "/skills/languages"
+    },
+    {
+        title: "Front-end frameworks",
+        description: "Frameworks I am familiar with and learning, some of them are React and Angular",
+        link: "/skills/frameworks/frontend"
+    },
+    {
+        title: "Back-end frameworks",
+        description: "Frameworks I am familiar with and learning, some of them are Node.js and Express",
+        link: "/skills/frameworks/backend"
+    },
+    {
+        title: "DevOps",
+        description: "Tools I am familiar with and learning, some of them are Docker and Kubernetes",
+        link: "/skills/devops"
+    },
+    {
+        title: "Database & Data Engineering",
+        description: "Tools I am familiar with and learning, some of them are SQL and NoSQL databases",
+        link: "/skills/database-n-data-engineering"
+    }
+]
+---
+
+<Layout>
+    <h1 class="text-primary text-4xl font-bold text-center">My Skills</h1>
+    <p class="mt-2">Welcome to my skills page! Here you can find a list of technologies I am familiar with and currently learning, along with links to more detailed information about each skill.</p>
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {Map.map((item) => (
+            <Card title={item.title} description={item.description} link={item.link} />
+        ))}
+    </div>
+</Layout>
